@@ -16,6 +16,6 @@ void loop() {
   float voltage = ((long)reading * Vcc * 1000) / ANALOG_MAX;
   float temp = voltage / 10; // +10mV/degree_Celsius
   Serial.print(temp);
-  Serial.println(' degree_Celsius.');
+  Serial.println(" degree_Celsius.");
   delay(delayTime);
 }
